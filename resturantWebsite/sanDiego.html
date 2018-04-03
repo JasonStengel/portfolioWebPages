@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="maps.css">
+		<link rel="stylesheet" href="Menu-Items.css">
+	</head>
+	<body>
+		<div class="nav-wrapper">
+		<div class="header">
+			<div class="logo">
+				<p class = "logo">
+				<span class="logoName"><a href="testDropdown.html">Jasons Grill</a></span>
+				</p>
+			</div>
+		</div>
+		<div width="100%">
+			<nav class="nav-menu">
+				<ul class="clearfix">
+					<li><a class="drop-down-links" href="testDropdown.html">Home</a></li>
+					<li><a class="drop-down-links" href="#">Menu</a>
+						<ul class="sub-menu">
+							<li><a class="drop-down-links" href="Burgers.html">Burgers</a></li>
+							<li><a class="drop-down-links" href="#">Salads</a></li>
+							<li><a class="drop-down-links" href="#">Appetizers</a></li>
+							<li><a class="drop-down-links" href="#">Steaks</a></li>
+						</ul>
+					</li>
+					<li><a  class="drop-down-links" href="#">Contact Us</a></li>
+					<li><a class="drop-down-links" href="#">Locations</a>
+						<ul class="sub-menu">
+							<li><a class="drop-down-links" href="sanFrancisco.html">San Francisco</a></li>
+							<li><a class="drop-down-links" href="sanDiego.html">San Diego</a></li>
+							<li><a class="drop-down-links" href="#">Orlando</a></li>
+							<li><a class="drop-down-links" href="#">Huston</a></li>
+						</ul>
+					</li>
+					<li><a class="drop-down-links" href="#">Jobs</a></li>
+					<li><a class="drop-down-links" href="#">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="centerName"><h1>San Diego location</h1></div>
+	
+	<div id="map" style="width:1200px;height:600px">Map location</div>
+	<script>
+	function myMap() {
+	var myLatLng = {lat: 32.7757, lng: -117.1611};
+	var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(32.7757, -117.1611),
+        zoom: 10,
+    };
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Jasons Grill'
+	});
+	}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNNyDVwH1Ql3iXmwR0rF8bJfmJqM7hVYM&callback=myMap"></script> 
+	<script type="text/javascript"></script>
+	</body>
+</html>

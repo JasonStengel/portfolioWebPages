@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+<title>Jason's Portfolio</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="portfolio_css.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+</head>
+<body>
+	<div id="navBar">
+		<div id="navContainer">
+			<ul id="menuItems">
+				<li><a class="button" href="#AboutMe">About Me</a></li>
+				<li><a class="button" href="#personal_projects">Portfolio</a></li>
+				<li><a class="button" href="#contactMe" >Contact Me</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="container">
+		<!--contains the basic bio of my programming knowledge-->
+		<section id="AboutMe">
+		<div id="aboutCont">
+			<br>
+			<h1 id="name" align="center"><span>Jason Stengel</span></h1>
+			<p>
+				<span class="description">
+				Front-end developer with experience in HTML,CSS,and JavaScript,<br> as
+				well as development of Android applications in Java and XML.
+				</span>
+			</p>
+			<hr id="horline">
+			<p>
+				<span class="description">
+				Web front-end and Android development
+				</span>
+			</p>
+		</div>
+		</section>
+		<!--contains my portfolio projects being worked on or
+        finished -->
+		<section id="personal_projects">
+			<br>
+			<br>
+			<p id="portfolioTitle">Portfolio</p>
+			<hr id="portfoliohr"width="40%" border="none" height="3px" background-color="#000">
+			<br>
+			<div id="containerProjects">
+				<div class="projects"> <a href="https://codepen.io/jasonStengel/full/rpXXKK/" alt="" target="_blank"><img class="portfoliopics" src="pics\teslabio.png"img></a></div>
+				<div class="projects"> <img class="portfoliopics" src="http://diaryofasocialgal.com/wp-content/uploads/2016/03/placeholder.png"></img></div>
+				<div class="projects"> <img class="portfoliopics" src="http://diaryofasocialgal.com/wp-content/uploads/2016/03/placeholder.png"></img></div>
+				<div class="projects"> <img class="portfoliopics" src="http://diaryofasocialgal.com/wp-content/uploads/2016/03/placeholder.png"></img></div>
+				<div class="projects"> <img class="portfoliopics" src="http://diaryofasocialgal.com/wp-content/uploads/2016/03/placeholder.png"></img></div>
+				<div class="projects"> <img class="portfoliopics" src="http://diaryofasocialgal.com/wp-content/uploads/2016/03/placeholder.png"></img></div>
+			</div>
+		</section>
+		<!--contains my contact info-->
+		<section id="contactMe">
+		<br>
+			<div id="containPara">
+				<p><span><b>Contact Me</b><span></p>
+				<hr width="15%">
+				<div id="contactInfo">
+					<form id="contactInfo">
+						<div class="formEntry">
+							<label for="fullName" novalidate="">Name</label>
+							<input placeholder="Name"type="text" id="fullName">				
+						</div>
+						<div class="formEntry">
+							<label for="email" novalidate="">email</label>
+								<input placeholder= "Email"type="text" name="email">							
+						</div>
+						<div class="formEntry">
+							<label for="phoneNumber" novalidate="">Phone Number</label>
+								<input placeholder= "Phone Number"type="text" name="phoneNumber">							
+						</div>
+						<div class="formEntry">
+							<label for="message">Message</label>
+							<textarea id="message"placeholder= "Message" row="5" required="" ></textarea>						
+						</div>	
+						<br>
+						<button id="submitButton"type="submit">Send</button>
+					</form>
+					
+				</div>
+				<div id="paragraphInfo">
+					<p><span>If you would like to contact me please fill out the info to the left. I will get back to you as soon as possible.</span></p>
+				</div>
+			</div>
+		</section>
+		<!--links to my social media pages-->
+		<div id="mediaContainer">
+		<div id="media">
+			<p class="mediaText">
+				<h2>Links to my social media profiles</h2>
+			</p>
+			<div>
+			<ul id="socProfiles">
+				<li class="mediaLinks"><a href="https://github.com/JasonStengel" target="_blank"><img class="mediaLinks" src="pics\githubLink.png" alt=""></img><a></li>
+				<li class="mediaLinks"> <a href="https://codepen.io/jasonStengel/#" alt=""target="_blank"><img class="mediaLinks" src="https://pbs.twimg.com/profile_images/923214541290221569/dCMZxkwz_400x400.jpg" alt=""><img></a></li>
+				<li class="mediaLinks"><img class="mediaLinks" src="pics\linkedin.png" alt=""><img></li>
+			</ul>
+			</div>
+		</div>
+			<div id="credits"><p><h2>Coded entirely by Jason Stengel on codepen</h2></p></div>
+		</div>
+	</div>
+		<script src="portfolio.js"></script>
+		<script type="text/javascript"></script>
+</body>
