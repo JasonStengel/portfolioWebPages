@@ -82,7 +82,7 @@ html {
 	/* prevent selection of text inside keys */
 	user-select: none;
 	
-	/* Smoothing out hover and active states using css3 transitions */
+	/* Smoothing out hover and active states*/
 	transition: all 0.2s ease;
 }
 
@@ -90,7 +90,7 @@ html {
 /* style different type of keys (operators/evaluate/clear) differently */
 .keys span.operator {
 	background: #FFF0F5;
-	margin-right: 0;
+	margin-right: 0px;
 }
 
 .keys span.eval {
