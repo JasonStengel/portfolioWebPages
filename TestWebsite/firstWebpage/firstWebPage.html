@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<style type="text/css">a {text-decoration:none}</style>
+	<title> Test Webpage</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<div>
+				<hr>
+					<h3 class="center">Jason's First Page</h3>
+				<hr>
+			<div>
+			<!--creates the menu at the top of page-->
+			<h3 class="center"> 
+				<ul id="menuItems">
+					<li><a href="firstWebPage.html"style="color: #ffffff">Home |</a></li>
+					<li><a href="javaScriptFile.html"style="color: #ffffff">News |</a></li>
+					<li> <a href="Calculator.html"style="color: #ffffff">Careers |</li>
+					<li> Products |</li>
+					<li> Contact Us |</li>
+					<li> About US |</li>
+				</ul>
+			</h3>	
+			<div id="wrapper">
+			<!--contains the boxes that flip horizontally 180 degrees -->
+				<div class="flip3d">
+					<div class="back"><!--back 1-->
+						<a href="https://github.com/JasonStengel">
+						<img src="Pics\gitHublink.png"width="240"height="200"></img>
+						</a>
+					</div>
+					<div class="front"><!--front 1-->
+						<a href="https://github.com/JasonStengel">
+						<img src="https://image.freepik.com/free-icon/github-logo-in-a-rounded-square_318-40761.jpg"width="240"height="200"></img>
+						</a>
+					</div>
+				</div>
+				<div>
+					<div class="flip3d">
+						<div class="back">
+						<!--back 2--> Box 2 - Back
+						</div>
+						<div class="front">
+						<!--front 2-->Box 2 - front
+						</div>
+					</div>
+					<div class="flip3d">
+						<div class="back">
+						<!--back 3-->Box 3 - Back
+						</div>
+						<div class="front">
+						<!--front 3-->Box 3 - front
+						</div>
+					</div>
+					<!--box that turns 90 degrees to the right on focus then back when focus is lost-->
+					<div class="animate-this"></div>
+					<!--a basic calculator that does just addition-->
+					<p>
+					<input id="num-one"> <text style="color: #ffffff"> + </text> <input id="num-two">
+					</p>
+					<p id="add-sum" style="color: #ffffff"> </p> 
+				</div>		
+			</div>
+		</div>
+		<!--import files for javaScript-->
+		<script src="test1.js"></script>
+		<script type="text/javascript"></script>
+	</body>
+</html>

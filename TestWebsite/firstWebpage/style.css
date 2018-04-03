@@ -1,0 +1,85 @@
+/* sets the styling of the that turns 90 degrees*/
+.animate-this{
+	height: 200px;
+	width: 240px;
+	background-color: #f00;
+	float:left;
+	margin:10px;
+	transition: transform 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease;
+	-o-transition: -o-transform 0.5s ease;
+}
+/* turn a box 90 degrees on focus*/
+.animate-this:hover {
+	transform: rotate(90deg);
+	-webkit-transition: -webkit-transform 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease;
+	-o-transition: -o-transform 0.5s ease;
+}
+/*sets the size of the boxes that flip*/
+.flip3d{
+	width:240px; 
+	height:200px; 
+	margin:10px; 
+	float:left;
+	text-align:center;
+	}
+/*sets the states for the front sides of the squares*/
+.flip3d > .front{
+		position: absolute;
+		transform: perspective(600px) rotate(0deg);
+		-webkit-transition: -webkit-transform 0.5s ease;
+		-moz-transition: -moz-transform 0.5s ease;
+		-o-transition: -o-transform 0.5s ease;
+		background: #Fc0; width:240px; height:200px; boarder_radius: 7px;
+		backface-visibility: hidden;
+		transition: -webkit-transform .5s linear 0s;
+		transition: transform .5s linear 0s;
+}
+/*sets the states for the front sides of the squares*/
+.flip3d > .back{
+	position: absolute;
+	transform: perspective(600px) rotateY(180deg);
+	-webkit-transition: -webkit-transform 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease;
+	-o-transition: -o-transform 0.5s ease;
+	background: #f00; width:240px; height:200px; boarder_radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+/*flips the front side of the box horizontally 180 degrees*/
+.flip3d:hover > .front{
+	transform: perspective(1000px) rotateY(180deg)
+}
+/*flips the back side of the box horizontally 180 degrees*/
+.flip3d:hover > .back{
+	transform: perspective(1000px) rotateY(0deg)
+}
+.center{
+	text-align: center;
+	color:#ffffff;
+	align:top;
+}
+.centerTitle{
+	text-align: center;
+	align:top;
+	font-size:25px;
+}
+ul#menuItems li {
+  display: inline;
+  list-style: none;
+  color:#ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  height: 50px;
+}
+body {
+    background-image: url("https://i.ytimg.com/vi/nv4O5sFYPMg/maxresdefault.jpg");
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1075px;
+}
